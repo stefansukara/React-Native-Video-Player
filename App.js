@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
+import { StatusBar, StyleSheet, Text, View } from 'react-native';
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <StatusBar barStyle="light-content" />
         <Text style={styles.welcome}>Welcome to MyVideoPlayer!</Text>
       </View>
     );
@@ -15,16 +16,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    backgroundColor: '#F5FCFF'
+    backgroundColor: '#75A7FF'
   },
   welcome: {
-    fontSize: 20,
+    fontSize: 24,
     textAlign: 'center',
-    marginTop: 100
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5
+    marginTop: 100,
+    color: 'white',
+    fontWeight: 'bold'
   }
 });
