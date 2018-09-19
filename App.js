@@ -3,7 +3,7 @@ import { StatusBar, StyleSheet, Text, View } from 'react-native';
 
 import Video from 'react-native-video';
 
-import miniVideo from './src/assets/videos/mini-video.mp4';
+import { miniVideo } from './src/assets/videos';
 
 export default class App extends Component {
   render() {
@@ -44,17 +44,17 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#75A7FF'
+    backgroundColor: '#55A5FF'
   },
   welcome: {
     fontSize: 24,
+    marginTop: 100,
     textAlign: 'center',
     color: 'white',
     fontWeight: 'bold'
   },
   video: {
-    marginTop: 50,
+    marginTop: 150,
     width: 300,
     height: 200,
     backgroundColor: 'white',
