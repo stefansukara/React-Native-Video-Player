@@ -22,6 +22,8 @@ export default class App extends Component {
           onError={this.videoError}
           style={styles.video}
           controls={true}
+          muted={false}
+          repeat={true}
         />
       </View>
     );
@@ -54,10 +56,10 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   },
   video: {
-    marginTop: 150,
+    position: 'absolute',
+    bottom: 200,
     width: 300,
     height: 200,
-    backgroundColor: 'white',
     borderColor: 'white',
     borderWidth: 1
   }
